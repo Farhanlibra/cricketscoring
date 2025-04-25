@@ -69,6 +69,7 @@ function App() {
             value={batsmen[0].name}
             onChange={(e) => handleBatsmanNameChange(0, e.target.value)}
           />
+          <br/>
         </label>{" "}
         <label>
           Batsman 2:{" "}
@@ -77,6 +78,7 @@ function App() {
             value={batsmen[1].name}
             onChange={(e) => handleBatsmanNameChange(1, e.target.value)}
           />
+          <br/>
         </label>{" "}
         <label>
           Bowler:{" "}
