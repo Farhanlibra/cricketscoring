@@ -89,7 +89,7 @@ function App() {
       </div>
 
       <div style={{ marginBottom: "1rem" }}>
-        <strong style={{fontSize:50}}>Score:</strong> {runs}/{wickets} ({formatOvers()} overs)
+        <strong style={{fontSize:50}}>Score:</strong> <span style={{fontSize:50}}> {runs}/{wickets} ({formatOvers()} overs </span>)
         <br />
         <strong>Batting:</strong>
         <ul>
