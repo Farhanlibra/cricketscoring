@@ -24,6 +24,13 @@ function App() {
     if (run % 2 !== 0) {
       setStrikerIndex((prev) => 1 - prev);
     }
+    if ((totalBalls + 1) % 6 === 0) {
+      // Over completed, swap strikers
+      const temp = striker;
+      setStriker(nonStriker);
+      setNonStriker(temp);
+    }
+    
   };
 
   const handleWicket = () => {
