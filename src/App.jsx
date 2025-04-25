@@ -8,37 +8,7 @@ function App() {
     { name: "", runs: 0 },
     { name: "", runs: 0 }
   ]);
-  useEffect(() => {
-    const gameState = {
-      runs,
-      wickets,
-      totalBalls,
-      striker,
-      nonStriker,
-      batsmenScores,
-      // Add more as needed
-    };
-    localStorage.setItem("cricketGameState", JSON.stringify(gameState));
-  }, [runs, wickets, totalBalls, striker, nonStriker, batsmenScores]);
-  useEffect(() => {
-    const savedState = localStorage.getItem("cricketGameState");
-    if (savedState) {
-      const {
-        runs,
-        wickets,
-        totalBalls,
-        striker,
-        nonStriker,
-        batsmenScores,
-      } = JSON.parse(savedState);
-      setRuns(runs);
-      setWickets(wickets);
-      setTotalBalls(totalBalls);
-      setStriker(striker);
-      setNonStriker(nonStriker);
-      setBatsmenScores(batsmenScores);
-    }
-  }, []);
+
   
   
   const [strikerIndex, setStrikerIndex] = useState(0);
